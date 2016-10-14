@@ -24,11 +24,8 @@ class Card {
                 return num
             } else {
                 switch rank {
-                case "A" : return 1
-                case "J" : return 11
-                case "Q" : return 12
-                case "K" : return 13
-                default: break
+                case "J", "Q", "K" : return 10
+                default : return 1
                 }
             }
         }
